@@ -62,7 +62,12 @@
       </rollback>
   </changeSet>
 
-
+<!-- 
+  The following changeset is configured with DML files in S3 bucket
+  Notice that the path in S3 bucket looks similar to the path for other SQL scripts
+  except that there is no main/700_dml directory in this repo. This directory is fetched
+  from S3 bucket using LIQUIBASE_SEARCH_PATH
+-->
   <changeSet author="nvoxland" id="DB-1020">
     <sqlFile path="main/700_dml/Q4-2022_employees.sql"/>
     <rollback>
