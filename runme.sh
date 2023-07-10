@@ -10,6 +10,7 @@ export AWS_S3_BUCKET=amalik-s3-extension-demo
 # Environment variables for Liquibase
 export LIQUIBASE_SEARCH_PATH=./,s3://${AWS_S3_BUCKET}
 export LIQUIBASE_COMMAND_CHANGELOG_FILE=changelog.xml
+export LIQUIBASE_PRO_LICENSE_KEY=<your Liquibase Pro license key here>
 # export LIQUIBASE_LOG_LEVEL=FINE
 
 # Database-specific environment variables
