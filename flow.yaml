@@ -33,7 +33,7 @@ stages:
   liquibaseUpdate:
     # Run Update on Latest Repo State
     # https://docs.liquibase.com/commands/update/update-sql.html
-    # actions:
+    actions:
     #   - type: liquibase
     #     command: update-sql
     #     cmdArgs: { }
